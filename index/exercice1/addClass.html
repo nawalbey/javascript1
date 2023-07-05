@@ -1,21 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
     <title>Document</title>
     <style>
-        .maClasse{
-            color: red;
-        }
+      .maClasse {
+        color: red;
+      }
+      .bg_yellow {
+        background-color: yellow;
+      }
+      .bg_body {
+        background-image: url(../img/Catwoman_Vol_5_20_Textless_Variant.webp);
+        background-size: cover;
+      }
     </style>
-</head>
-<body>
-    <p id="para">Lorem ipsum... </p>
+  </head>
+  <body>
+    <h1 id="background">catwoman</h1>
+    <p id="para">je suis catwoman</p>
+
     <script>
-        // ajoute la classe "maClasse" au paragraphe
-        $('#para').addClass('maClasse');
+      // ajoute la classe "maClasse" au paragraphe
+      // je selectionne un element html qui possede un id qui s'appelle "para", j'applique la methode "addClass de "jQuery" a fin d'ajouter la classe "maClasse" a cet element (p)
+      $("#para").addClass("maClasse");
+      $("body").addClass("bg_body");
     </script>
-</body>
+  </body>
 </html>

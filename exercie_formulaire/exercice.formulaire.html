@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="exercice.formulaire.js" defer></script>
+
+    <style>
+      input {
+        height: 30px;
+        width: 300px;
+      }
+      .ligne {
+        margin: 10px 0;
+      }
+      .bg_body {
+        background-image: url("../index/img/realisateur-the-flash-laisse-presager-film-batman-dans-nouveau-dcu.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        
+      }
+      h1{
+        text-align: center;
+        color: rgba(255, 72, 0, 0.603);
+      }
+      p{
+        text-align: center;
+        color: palevioletred;
+      }
+    </style>
+  </head>
+  <body class="bg_body">
+    <div>
+      <h1>trouvez le nombre mystere</h1>
+      <p>vous avez 7 essais maximun pour trouver le nombre</p>
+      <button id="batman">nouveau jeux</button>
+      <button id="harley_quin">solution</button>
+      <button id="je_suis_le_batman">proposer</button>
+    </div>
+    <form>
+      <div>
+        <label for="proposition">proposition</label>
+        <input type="text" id="proposition" />
+      </div>
+      <div>
+        <label for="n°essai">n°essai</label>
+        <input type="text" id="n_essai" disabled />
+      </div>
+      <div>
+        <label for="message">message</label>
+        <input type="text" id="message" disabled />
+      </div>
+      <div>
+        <label for="reponses">reponses</label>
+        <input type="text" id="reponse" disabled />
+      </div>
+    </form>
+    <script></script>
+  </body>
+</html>
