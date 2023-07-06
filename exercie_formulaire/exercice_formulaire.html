@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body class="body1">
+    <h1>formulaire de reservation</h1>
+
+    <form>
+      <div>
+        <div>
+          <label for="nom">nom</label>
+          <input type="text" id="nom" placeholder="nom" />
+        </div>
+        <div>
+          <label for="email">email</label>
+          <input type="text" id="email" placeholder="email" />
+        </div>
+        <div>
+          <label for="telephone">telephone</label>
+          <input type="text" id="telephone" placeholder="telephone" />
+        </div>
+        <div>
+          <select name="choisir_un_plat" id="choisir_un_plat">
+            <option value="0">choisir un plat</option>
+            <option value="15">thiebou dieune</option>
+            <option value="12">salade de quinoa</option>
+            <option value="11">sushi burger</option>
+            <option value="9">filets de poulet panes</option>
+          </select>
+        </div>
+        <div>
+          <select name="choisir un dessert" id="choisir_un_dessert">
+            <option value="0">choisir un dessert</option>
+            <option value="14">churros maison</option>
+            <option value="13">biscuits au pepites</option>
+            <option value="10">buche de noel</option>
+            <option value="8">gateau au fromage</option>
+          </select>
+        </div>
+        <div>
+          <label for="total_HT">total HT</label>
+          <input type="text" id="total_HT" placeholder="total HT" />
+        </div>
+        <div>
+          <label for="total_TTC">total TTC</label>
+          <input type="text" id="total_TTC" placeholder="total TTC" />
+        </div>
+        <div>
+          <input type="checkbox" name="checkbox" id="condition" />
+          <label id="cdg" for="">j'accepte les condition generales</label>
+        </div>
+        <div>
+          <button id="envoyer">validder ma commande</button>
+        </div>
+      </div>
+    </form>
+    <script src="exercice_formulaire.js"></script>
+  </body>
+</html>
