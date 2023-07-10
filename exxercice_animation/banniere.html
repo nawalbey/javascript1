@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.0/dist/jquery.min.js"></script>
+    <style>
+      #banner {
+        width: 100%;
+        height: 700px;
+        background-image: url(../index/img/Catwoman_1.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header id="banner"></header>
+    <script>
+      let img = ["../index/img/Catwoman_1.jpg", "../index/img/The-Batman-2.webp"];
+
+      let curentIndex = 0;
+
+      setInterval(() => {
+        curentIndex++;
+        if (curentIndex == img.length) {
+          curentIndex = 0;
+        }
+        document.getElementById("banner").style.backgroundImage =
+          "url(" + img[curentIndex] + ")";
+      }, 5000);
+
+    //   setInterval(() => {
+    //     curentIndex++;
+    //     if (curentIndex == img.length) {
+    //       curentIndex = 0;
+    //     }
+    //     $("#banner").css({
+    //       backgroundImage: "url(" + img[curentIndex] + ")",
+    //     });
+    //   }, 5000);
+    </script>
+  </body>
+</html>
